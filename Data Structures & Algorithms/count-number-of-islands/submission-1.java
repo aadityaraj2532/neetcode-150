@@ -18,8 +18,8 @@ class Solution {
         grid[i][j] = 0;
         while(!q.isEmpty()){
             int[] curr = q.poll();
-            int x = curr[0];
-            int y = curr[1];
+            int x = curr[0];// for curr row
+            int y = curr[1];// for curr col
             if(x+1 < grid.length && grid[x+1][y] == '1'){
                 q.add(new int[]{x+1, y});
                 grid[x+1][y]=0;
